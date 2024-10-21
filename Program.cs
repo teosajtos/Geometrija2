@@ -16,8 +16,8 @@
         Console.WriteLine("-------------------------Pravokutnik-------------------------- ");
         
         Pravokutnik pravokutnik = new Pravokutnik(5, 10);
-        Console.WriteLine("Pravokutnik opseg: " + pravokutnik.Opseg());
-        Console.WriteLine("Pravokutnik povrsina: " + pravokutnik.GetPovrsina());
+        Console.WriteLine("Opseg pravokutnika: " + pravokutnik.Opseg());
+        Console.WriteLine("Povrsina Pravokutnika: " + pravokutnik.GetPovrsina());
         Console.WriteLine("Je li kvadrat? " + pravokutnik.GetJeKvadrat());
     }
 }
