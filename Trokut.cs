@@ -12,15 +12,16 @@
         Console.WriteLine("Trokut je stvoren");
     }
 
-    public double IzracunajOpseg()
-    {
-        return AB.Duljina() + BC.Duljina() + CA.Duljina();
-    }
+    
 
     public double IzracunajPovrsinu()
     {
         double s = IzracunajOpseg() / 2;
         return Math.Sqrt(s * (s - AB.Duljina()) * (s - BC.Duljina()) * (s - CA.Duljina()));
+    }
+    public double IzracunajOpseg()
+    {
+        return AB.Duljina() + BC.Duljina() + CA.Duljina();
     }
 
     public bool JeJednakostranican()
@@ -39,13 +40,13 @@
         double b = BC.Duljina();
         double c = CA.Duljina();
 
-        if (a > b && a > c)
+        if  (b > a && b > c)
         {
-            return a * a == b * b + c * c;
+            return  b* b == a * a + c * c;
         }
-        else if (b > a && b > c)
+        else if  (a > b && a > c)
         {
-            return b * b == a * a + c * c;
+            return  a* a == b * b + c * c;
         }
         else
         {

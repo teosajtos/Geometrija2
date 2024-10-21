@@ -3,7 +3,7 @@
     static void Main(string[] args)
     {
 
-        Console.WriteLine("-------------------------Trokut-------------------------- ");
+        Console.WriteLine("-------------------------Trokut------------------------------ ");
 
         Trokut abc = new Trokut(new Tocka(0, 0), new Tocka(0, 3), new Tocka(4, 0));
         Console.WriteLine("Opseg trokuta: " + abc.IzracunajOpseg());
